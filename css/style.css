@@ -13,12 +13,21 @@ h1 {
     font-family: var(--heading-font);
     font-weight: 700;
     font-size: 96px;
-    line-height: 128px;
+    line-height: 1.5;
     margin-bottom: 24px;
 }
 
+h2 {
+    font-size: 64px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+}
 
-
+p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+}
 
 
 .hero {
@@ -52,5 +61,40 @@ h1 {
     padding: 18px 46px;
     font-size: 18px;
     line-height: 27px;
-    margin: 0;
+}
+
+
+.btn-branding-outline {
+    border: 1px solid var(--btn-color);
+    color: var(--btn-color);
+    border-radius: 4px;
+    padding: 18px 46px;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.project-description {
+    padding: 120px 60px;
+}
+
+@media (max-width: 960px) {
+    h1 {
+        font-size: 45px;
+    }
+    h2 {
+        font-size: 45px;
+    }
+    .hero p {
+        font-size: 30px;
+    }
+    .hero h2 {
+        font-size: 20px;
+    }
+    .hero {
+        padding: 80px 20px;
+    }
+    .project-description {
+        padding: 0;
+        text-align: center;
+    }
 }
