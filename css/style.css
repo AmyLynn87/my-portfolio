@@ -78,7 +78,7 @@ p {
 }
 
 .content-container {
-    padding:160px 20px;
+    padding: 60px 20px;
 }
 
 .content {
@@ -110,8 +110,49 @@ font-size: 14px;
     border-radius: 20px;
 }
 
+.site-logo {
+    width: 50px;
+    height: 50px;
+    display: block;
+    overflow: visible;
+    border: 4px solid #000;
+    position: relative;
+    transform: rotate(0deg);
+    transition: transform .4s ease-in-out;
+    flex-shrink: 0
+}
 
+.site-logo .logo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(
+0deg
+);
+    transition: transform .4s ease-in-out;
+    font-weight: 700;
+    font-size: 18px;
+}
 
+    .site-logo:hover {
+        opacity: 1;
+        transform: rotate(-90deg);
+        transition: transform .4s ease-in-out
+    }
+    
+    .site-logo:hover .logo-text {
+        transform: translate(-50%,-50%) rotate(90deg);
+        transform-origin: center
+    }
+    
+    .active {
+        color: var(--secondary-font-color) !important;
+    }
+
+    .nav-item {
+    padding: 0 10px;
+    line-height: 14px;
+}
 
 
 @media (max-width: 960px) {
