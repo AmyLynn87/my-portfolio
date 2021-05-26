@@ -102,6 +102,11 @@ p {
     padding: 120px 60px;
 }
 
+.projects img {
+    max-width: 100%;
+}
+
+
 .content-container {
     padding: 60px 20px;
 }
@@ -136,12 +141,15 @@ font-size: 14px;
     font-weight: bold;
     font-style: italic;
 }
-.about-title {
+.about-title, .projects h3 {
     font-size: 35px !important;
     font-family: var(--heading-font) !important;
 }
 
-.title-list {
+.about-list {
+    list-style: none;
+}
+.title-about-list {
     display: inline-block;
     margin-bottom: 10px;
 }
