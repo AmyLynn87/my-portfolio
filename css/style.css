@@ -144,15 +144,47 @@ font-size: 14px;
 .about-title, .projects h3 {
     font-size: 35px !important;
     font-family: var(--heading-font) !important;
+ 
 }
 
-.about-list {
-    list-style: none;
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60px 60px 60px 60px;
+    gap: 10px 0px;
+    grid-template-areas:
+      "about-title about-title about-title about-title"
+      "about-subtitle about-subtitle about-subtitle about-subtitle"
+      "item1 item2 item3 item4"
+      "item5 item6 item7 item8"
+      "item9 . . .";
+      text-align: center;
+  }
+  
+  .about-title { grid-area: about-title; }
+  .about-subtitle { grid-area: about-subtitle; }
+  .item1 { grid-area: item1; }
+  .item2 { grid-area: item2; }
+  .item3 { grid-area: item3; }
+  .item4 { grid-area: item4; }
+  .item5 { grid-area: item5; }
+  .item6 { grid-area: item6; }
+  .item7 { grid-area: item7; }
+  .item8 { grid-area: item8; }
+  .item9 { grid-area: item9; }
+
+.grid-container .fab{
+    font-size: 30px;
 }
-.title-about-list {
-    display: inline-block;
-    margin-bottom: 10px;
+
+.grid-container img{
+    width: 30px;
 }
+
+.fa-html5 {color: orangered;}
+.fa-css3-alt {color: blue;}
+.fa-js-square {color:yellow;}
+.fa-bootstrap {color:blueviolet;}
 .about-photo {
     border-radius: 20px;
     width: 550px;
