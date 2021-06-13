@@ -3,9 +3,8 @@ font-family: 'Poppins', sans-serif; */
 
 :root {
 
-    --secondary-font-color: #008080;
+    --secondary-font-color: #08979D;
     --primary-bg-color: #000;
-    --btn-color: #008080;
     --heading-font: 'Playfair Display', serif;
     --default-font: 'Poppins', sans-serif;
 }
@@ -82,7 +81,7 @@ p {
 }
 
 .btn-branding {
-    background-color: var(--btn-color);
+    background-color: var(--secondary-font-color);
     color: #fff;
     border-radius: 4px;
     padding: 18px 46px;
