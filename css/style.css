@@ -77,7 +77,8 @@ p {
 }
 
 .homepage {
-    padding: 50px 20px 0;
+    padding-top: 50px;
+    text-align: center;
 }
 
 .btn-branding {
@@ -93,6 +94,8 @@ p {
 
 .homepage .btn-branding{
     width: 200px;
+    display: block;
+    margin: 0 auto;
 }
 
 
@@ -156,7 +159,7 @@ font-size: 14px;
       "about-subtitle about-subtitle about-subtitle about-subtitle"
       "item1 item2 item3 item4"
       "item5 item6 item7 item8"
-      "item9 . . .";
+      "item9 item10 . .";
       text-align: center;
   }
   
@@ -171,6 +174,7 @@ font-size: 14px;
   .item7 { grid-area: item7; }
   .item8 { grid-area: item8; }
   .item9 { grid-area: item9; }
+  .item10 { grid-area: item10; }
 
 .grid-container .fab{
     font-size: 30px;
@@ -184,6 +188,7 @@ font-size: 14px;
 .fa-css3-alt {color: blue;}
 .fa-js-square {color:yellow;}
 .fa-bootstrap {color:blueviolet;}
+.fa-react {color: skyblue;}
 .about-photo {
     border-radius: 20px;
     width: 550px;
@@ -248,6 +253,13 @@ font-size: 14px;
     background: var(--secondary-font-color);
     padding: 15px;
     border-radius: 20px;
+
+}
+
+.best-project {
+    background: var(--secondary-font-color);
+    padding: 15px;
+    border-radius: 20px;
 }
 
 a {
@@ -266,6 +278,7 @@ footer {
 footer h3{
     color: var(--secondary-font-color);
 }
+
 footer p{
 color: white;
 }
